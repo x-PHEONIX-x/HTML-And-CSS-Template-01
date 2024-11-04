@@ -301,9 +301,18 @@ html{
     box-shadow: black 3px 3px 10px, black -3px -3px 10px;
     transition: .5s;
 }
-.portfolio .card:hover{
-    box-shadow: darkred 3px 3px 10px, darkred -3px -3px 10px;
-    transform: translate(0, -5%);
+
+@media (min-width: 769px) {
+    .portfolio .card:hover{
+        box-shadow: darkred 3px 3px 10px, darkred -3px -3px 10px;
+        transform: translate(0, -5%);
+    }
+}
+@media (max-width: 768px) {
+    .portfolio .card:hover{
+        box-shadow: darkred 3px 3px 10px, darkred -3px -3px 10px;
+        transform: translate(-3%, 0);
+    }
 }
 .portfolio .card img{
     max-width: 100%;
